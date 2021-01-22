@@ -35,3 +35,6 @@
 2021-01-22 21:24:38.077  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_7
 2021-01-22 21:24:38.129  INFO 3708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
 2021-01-22 21:24:38.133  INFO 3708 --- [main] c.doyoudo.platform.PlatformApplication   : Started PlatformApplication in 4.45 seconds (JVM running for 5.247)
+2021-01-22 21:26:13.972  INFO 3708 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-22 21:26:13.972  INFO 3708 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-22 21:26:13.981  INFO 3708 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
