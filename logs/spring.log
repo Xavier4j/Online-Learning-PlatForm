@@ -1,0 +1,37 @@
+2021-01-22 21:24:34.249  INFO 3708 --- [main] c.doyoudo.platform.PlatformApplication   : Starting PlatformApplication on DESKTOP-1H3MPJV with PID 3708 (E:\毕业设计代做\Java课程在线教学平台\online_learning_platform\target\classes started by 38767 in E:\毕业设计代做\Java课程在线教学平台\online_learning_platform)
+2021-01-22 21:24:34.383 DEBUG 3708 --- [main] c.doyoudo.platform.PlatformApplication   : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-01-22 21:24:34.386  INFO 3708 --- [main] c.doyoudo.platform.PlatformApplication   : No active profile set, falling back to default profiles: default
+2021-01-22 21:24:36.100  INFO 3708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-01-22 21:24:36.108  INFO 3708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-22 21:24:36.109  INFO 3708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-22 21:24:36.212  INFO 3708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-22 21:24:36.213  INFO 3708 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1739 ms
+2021-01-22 21:24:36.310  INFO 3708 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-01-22 21:24:36.548  INFO 3708 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-22 21:24:36.749  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Answer".
+2021-01-22 21:24:36.889  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Comment".
+2021-01-22 21:24:36.948  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Course".
+2021-01-22 21:24:36.985  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Message".
+2021-01-22 21:24:37.020  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Notice".
+2021-01-22 21:24:37.053  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Paper".
+2021-01-22 21:24:37.082  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Point".
+2021-01-22 21:24:37.109  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Profile".
+2021-01-22 21:24:37.137  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Question".
+2021-01-22 21:24:37.164  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Reply".
+2021-01-22 21:24:37.189  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.User".
+2021-01-22 21:24:37.212  WARN 3708 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Video".
+2021-01-22 21:24:37.710  INFO 3708 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-22 21:24:37.789  INFO 3708 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-22 21:24:37.901  INFO 3708 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-01-22 21:24:37.947  INFO 3708 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-22 21:24:37.962  INFO 3708 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-22 21:24:37.983  INFO 3708 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-22 21:24:38.056  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_1
+2021-01-22 21:24:38.059  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_2
+2021-01-22 21:24:38.063  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_3
+2021-01-22 21:24:38.066  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_4
+2021-01-22 21:24:38.070  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_5
+2021-01-22 21:24:38.073  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_6
+2021-01-22 21:24:38.077  INFO 3708 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_7
+2021-01-22 21:24:38.129  INFO 3708 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-01-22 21:24:38.133  INFO 3708 --- [main] c.doyoudo.platform.PlatformApplication   : Started PlatformApplication in 4.45 seconds (JVM running for 5.247)
