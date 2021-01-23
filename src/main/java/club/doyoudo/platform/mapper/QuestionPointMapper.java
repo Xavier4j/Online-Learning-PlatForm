@@ -1,6 +1,6 @@
 package club.doyoudo.platform.mapper;
 
-import club.doyoudo.platform.entity.Question;
+import club.doyoudo.platform.entity.QuestionPoint;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author Xavier4j
  * @since 2021-01-23
  */
-public interface QuestionMapper extends BaseMapper<Question> {
+public interface QuestionPointMapper extends BaseMapper<QuestionPoint> {
 
 }

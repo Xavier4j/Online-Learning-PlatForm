@@ -1,6 +1,6 @@
 package club.doyoudo.platform.service;
 
-import club.doyoudo.platform.entity.Question;
+import club.doyoudo.platform.entity.QuestionPoint;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author Xavier4j
  * @since 2021-01-23
  */
-public interface IQuestionService extends IService<Question> {
+public interface IQuestionPointService extends IService<QuestionPoint> {
 
 }

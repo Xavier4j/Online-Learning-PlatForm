@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-01-23
  */
 @RestController
-@RequestMapping("/answer")
-public class AnswerController {
+@RequestMapping("/question-point")
+public class QuestionPointController {
 
 }
 

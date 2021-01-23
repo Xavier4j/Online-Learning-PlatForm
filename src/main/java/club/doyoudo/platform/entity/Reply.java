@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-22
+ * @since 2021-01-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -22,17 +22,17 @@ public class Reply implements Serializable {
     /**
      * 回复id
      */
-    private String id;
+    private Long id;
 
     /**
      * 评论id,该回复仅可在该评论下可见
      */
-    private String commentId;
+    private Long commentId;
 
     /**
      * 回复者id
      */
-    private String reviewerId;
+    private Long reviewerId;
 
     /**
      * 回复内容

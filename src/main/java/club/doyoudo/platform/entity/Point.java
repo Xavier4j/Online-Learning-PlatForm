@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-22
+ * @since 2021-01-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -19,7 +19,7 @@ public class Point implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String id;
+    private Long id;
 
     private String content;
 

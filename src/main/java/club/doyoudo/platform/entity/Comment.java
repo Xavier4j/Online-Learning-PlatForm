@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-22
+ * @since 2021-01-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -22,17 +22,17 @@ public class Comment implements Serializable {
     /**
      * 评论id 不允许重复
      */
-    private String id;
+    private Long id;
 
     /**
      * 帖子id，该评论仅可在该帖子下可见
      */
-    private String postId;
+    private Long postId;
 
     /**
      * 评论者id
      */
-    private String reviewerId;
+    private Long reviewerId;
 
     /**
      * 评论内容
@@ -43,16 +43,6 @@ public class Comment implements Serializable {
      * 评论时间
      */
     private LocalDateTime createTime;
-
-    /**
-     * 是否置顶
-     */
-    private Boolean isTop;
-
-    /**
-     * 0代表正常，1代表删除
-     */
-    private Boolean isDelete;
 
 
 }

@@ -6,7 +6,9 @@ import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
+import com.baomidou.mybatisplus.generator.config.builder.ConfigBuilder;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
+import com.baomidou.mybatisplus.generator.config.rules.FileType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.engine.VelocityTemplateEngine;
@@ -90,21 +92,21 @@ public class CodeGenerator {
             }
         });
         //是否覆盖生成的代码
-        /*
+
         cfg.setFileCreate(new IFileCreate() {
             @Override
             public boolean isCreate(ConfigBuilder configBuilder, FileType fileType, String filePath) {
                 // 判断自定义文件夹是否需要创建
-                checkDir("调用默认方法创建的目录，自定义目录用");
-                if (fileType == FileType.MAPPER) {
-                    // 已经生成 mapper 文件判断存在，不想重新生成返回 false
-                    return !new File(filePath).exists();
-                }
+//                checkDir("调用默认方法创建的目录，自定义目录用");
+//                if (fileType == FileType.MAPPER) {
+//                    // 已经生成 mapper 文件判断存在，不想重新生成返回 false
+//                    return !new File(filePath).exists();
+//                }
                 // 允许生成模板文件
                 return true;
             }
         });
-        */
+
         cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
 
@@ -131,8 +133,8 @@ public class CodeGenerator {
         // strategy.setSuperControllerClass("你自己的父类控制器,没有就不用设置!");
         // 写于父类中的公共字段
         // strategy.setSuperEntityColumns("id");
-        //user,profile,course,video,point,question,answer,paper,comment,reply,notice,message
-        strategy.setInclude(scanner("表名，多个英文逗号分割(user,profile,course,video,point,question,answer,paper,comment,reply,notice,message)").split(","));
+        //user,profile,course,video,point,question,answer,paper,comment,reply,notice,message,question_point
+        strategy.setInclude(scanner("表名，多个英文逗号分割(user,profile,course,video,point,question,answer,paper,comment,reply,notice,message,question_point)").split(","));
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);

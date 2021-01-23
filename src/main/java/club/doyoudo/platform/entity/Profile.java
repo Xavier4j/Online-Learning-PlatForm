@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-22
+ * @since 2021-01-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,7 +21,7 @@ public class Profile implements Serializable {
     /**
      * 用户id
      */
-    private String userId;
+    private Long userId;
 
     /**
      * 昵称 不能重复
@@ -31,7 +31,7 @@ public class Profile implements Serializable {
     /**
      * 头像
      */
-    private String avatar;
+    private String avatarUrl;
 
     /**
      * 0男 1 女 2 保密

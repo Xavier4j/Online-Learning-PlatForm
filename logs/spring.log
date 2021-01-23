@@ -38,3 +38,148 @@
 2021-01-22 21:26:13.972  INFO 3708 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-01-22 21:26:13.972  INFO 3708 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-01-22 21:26:13.981  INFO 3708 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-01-22 22:21:32.581  INFO 8636 --- [main] c.doyoudo.platform.PlatformApplication   : Starting PlatformApplication on DESKTOP-1H3MPJV with PID 8636 (E:\毕业设计代做\Java课程在线教学平台\online_learning_platform\target\classes started by 38767 in E:\毕业设计代做\Java课程在线教学平台\online_learning_platform)
+2021-01-22 22:21:32.584 DEBUG 8636 --- [main] c.doyoudo.platform.PlatformApplication   : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-01-22 22:21:32.587  INFO 8636 --- [main] c.doyoudo.platform.PlatformApplication   : No active profile set, falling back to default profiles: default
+2021-01-22 22:21:35.035  INFO 8636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2021-01-22 22:21:35.045  INFO 8636 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-22 22:21:35.045  INFO 8636 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-22 22:21:35.143  INFO 8636 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-22 22:21:35.143  INFO 8636 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2500 ms
+2021-01-22 22:21:35.236  INFO 8636 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-01-22 22:21:35.503  INFO 8636 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-01-22 22:21:36.014  WARN 8636 --- [main] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "club.doyoudo.platform.entity.Profile".
+2021-01-22 22:21:36.534  INFO 8636 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-22 22:21:36.605  INFO 8636 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-22 22:21:36.707  INFO 8636 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2021-01-22 22:21:36.748  INFO 8636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-01-22 22:21:36.761  INFO 8636 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-01-22 22:21:36.783  INFO 8636 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-01-22 22:21:36.904  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_1
+2021-01-22 22:21:36.909  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_2
+2021-01-22 22:21:36.915  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_3
+2021-01-22 22:21:36.919  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_4
+2021-01-22 22:21:36.923  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_5
+2021-01-22 22:21:36.928  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_6
+2021-01-22 22:21:36.933  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: logInUsingPOST_7
+2021-01-22 22:21:36.948  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: signUpUsingPOST_1
+2021-01-22 22:21:36.950  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: signUpUsingPOST_2
+2021-01-22 22:21:36.953  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: signUpUsingPOST_3
+2021-01-22 22:21:36.955  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: signUpUsingPOST_4
+2021-01-22 22:21:36.958  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: signUpUsingPOST_5
+2021-01-22 22:21:36.961  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: signUpUsingPOST_6
+2021-01-22 22:21:36.969  INFO 8636 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: signUpUsingPOST_7
+2021-01-22 22:21:37.018  INFO 8636 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2021-01-22 22:21:37.021  INFO 8636 --- [main] c.doyoudo.platform.PlatformApplication   : Started PlatformApplication in 4.893 seconds (JVM running for 5.816)
+2021-01-22 22:21:49.069  INFO 8636 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-22 22:21:49.070  INFO 8636 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-22 22:21:49.075  INFO 8636 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-01-22 22:21:58.839 DEBUG 8636 --- [http-nio-8090-exec-10] c.d.platform.mapper.UserMapper.insert    : ==>  Preparing: INSERT INTO user ( id, username, password ) VALUES ( ?, ?, ? )
+2021-01-22 22:21:58.940 DEBUG 8636 --- [http-nio-8090-exec-10] c.d.platform.mapper.UserMapper.insert    : ==> Parameters: 1352622540517036034(String), string(String), string(String)
+2021-01-22 22:21:58.959 DEBUG 8636 --- [http-nio-8090-exec-10] c.d.platform.mapper.UserMapper.insert    : <==    Updates: 1
+2021-01-22 23:06:10.495 DEBUG 8636 --- [http-nio-8090-exec-5] c.d.platform.mapper.UserMapper.insert    : ==>  Preparing: INSERT INTO user ( id, username, password ) VALUES ( ?, ?, ? )
+2021-01-22 23:06:10.498 DEBUG 8636 --- [http-nio-8090-exec-5] c.d.platform.mapper.UserMapper.insert    : ==> Parameters: 1352633662330654721(String), string(String), string(String)
+2021-01-22 23:06:10.613 ERROR 8636 --- [http-nio-8090-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'user.username'
+### The error may exist in club/doyoudo/platform/mapper/UserMapper.java (best guess)
+### The error may involve club.doyoudo.platform.mapper.UserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO user  ( id, username, password )  VALUES  ( ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'user.username'
+; Duplicate entry 'string' for key 'user.username'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'user.username'] with root cause
+
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'user.username'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:115) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:960) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:388) ~[mysql-connector-java-8.0.11.jar:8.0.11]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3461) ~[druid-1.1.22.jar:1.1.22]
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440) ~[druid-1.1.22.jar:1.1.22]
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3459) ~[druid-1.1.22.jar:1.1.22]
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167) ~[druid-1.1.22.jar:1.1.22]
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.22.jar:1.1.22]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.sun.proxy.$Proxy125.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:56) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.6.jar:3.5.6]
+	at com.baomidou.mybatisplus.core.executor.MybatisCachingExecutor.update(MybatisCachingExecutor.java:85) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.6.jar:3.5.6]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.6.jar:3.5.6]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
+	at com.sun.proxy.$Proxy77.insert(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.5.jar:2.0.5]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
+	at com.sun.proxy.$Proxy78.insert(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.extension.service.IService.save(IService.java:63) ~[mybatis-plus-extension-3.4.1.jar:3.4.1]
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>) ~[mybatis-plus-extension-3.4.1.jar:3.4.1]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687) ~[spring-aop-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at club.doyoudo.platform.service.impl.UserServiceImpl$$EnhancerBySpringCGLIB$$fb09d146.save(<generated>) ~[classes/:na]
+	at club.doyoudo.platform.controller.UserController.signUp(UserController.java:55) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-01-22 23:06:31.979 DEBUG 8636 --- [http-nio-8090-exec-9] c.d.platform.mapper.UserMapper.insert    : ==>  Preparing: INSERT INTO user ( id, username, password ) VALUES ( ?, ?, ? )
+2021-01-22 23:06:31.981 DEBUG 8636 --- [http-nio-8090-exec-9] c.d.platform.mapper.UserMapper.insert    : ==> Parameters: 1352633752508190722(String), string1(String), string(String)
+2021-01-22 23:06:31.991 DEBUG 8636 --- [http-nio-8090-exec-9] c.d.platform.mapper.UserMapper.insert    : <==    Updates: 1

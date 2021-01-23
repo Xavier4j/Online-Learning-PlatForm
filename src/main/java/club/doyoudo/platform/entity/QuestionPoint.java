@@ -14,29 +14,24 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Video implements Serializable {
+public class QuestionPoint implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 视频id
+     * 问题_知识点表id
      */
     private Long id;
 
     /**
-     * 课程id
+     * 问题id
      */
-    private Long courseId;
+    private Long questionId;
 
     /**
      * 知识点id
      */
     private Long pointId;
-
-    /**
-     * 视频路径
-     */
-    private String location;
 
 
 }

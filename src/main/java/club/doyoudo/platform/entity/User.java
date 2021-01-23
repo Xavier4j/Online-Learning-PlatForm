@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-22
+ * @since 2021-01-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -21,7 +21,7 @@ public class User implements Serializable {
     /**
      * 用户ID
      */
-    private String id;
+    private Long id;
 
     /**
      * 用户登录名 不允许更改 不允许重复

@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-22
+ * @since 2021-01-23
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -22,12 +22,12 @@ public class Message implements Serializable {
     /**
      * 消息id
      */
-    private String id;
+    private Long id;
 
     /**
      * 消息发送人
      */
-    private String sender;
+    private Long sender;
 
     /**
      * 消息内容
@@ -42,7 +42,7 @@ public class Message implements Serializable {
     /**
      * 0代表未读，1代表已读
      */
-    private Integer status;
+    private Boolean status;
 
 
 }

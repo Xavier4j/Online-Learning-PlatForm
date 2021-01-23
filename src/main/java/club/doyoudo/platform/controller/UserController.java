@@ -15,11 +15,11 @@ import javax.annotation.Resource;
 
 /**
  * <p>
- * 前端控制器
+ *  前端控制器
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-22
+ * @since 2021-01-23
  */
 @RestController
 @RequestMapping("/user")
@@ -49,10 +49,11 @@ public class UserController {
     @ApiOperation(value = "注册", notes = "只需填写username与password", produces = "application/json", httpMethod = "POST")
     @RequestMapping("/signup")
     public ResponseWrapper signUp(@RequestBody User user) {
-
+        user.setId(null);
         //只能注册为学生
         user.setRole(null);
         if (userService.save(user)) {
+            System.out.println(user.getId());
             return new ResponseWrapper(true, 201, "注册成功", null);
         } else {
             return new ResponseWrapper(false, 600, "登录失败，账号或者密码有误!", null);
