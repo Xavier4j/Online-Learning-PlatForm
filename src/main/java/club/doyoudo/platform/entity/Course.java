@@ -19,17 +19,30 @@ public class Course implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 课程id
+     */
     private Long id;
 
+    /**
+     * 课程名
+     */
     private String name;
 
-    private LocalDateTime createTime;
-
-    private Integer status;
-
+    /**
+     * 开始时间
+     */
     private LocalDateTime startTime;
 
+    /**
+     * 结束时间
+     */
     private LocalDateTime endTime;
+
+    /**
+     * 创建时间
+     */
+    private LocalDateTime createTime;
 
 
 }

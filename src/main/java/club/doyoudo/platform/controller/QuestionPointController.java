@@ -1,6 +1,7 @@
 package club.doyoudo.platform.controller;
 
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author Xavier4j
  * @since 2021-01-23
  */
+@CrossOrigin
 @RestController
 @RequestMapping("/question-point")
 public class QuestionPointController {

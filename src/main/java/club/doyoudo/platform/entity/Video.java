@@ -38,5 +38,10 @@ public class Video implements Serializable {
      */
     private String location;
 
+    /**
+     * 视频的次序
+     */
+    private Integer sequence;
+
 
 }

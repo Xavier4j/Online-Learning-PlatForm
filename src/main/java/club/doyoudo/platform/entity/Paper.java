@@ -19,6 +19,9 @@ public class Paper implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     * 考卷id
+     */
     private Long id;
 
     /**
@@ -26,12 +29,19 @@ public class Paper implements Serializable {
      */
     private String title;
 
-    private Integer status;
-
+    /**
+     * 考试开始时间
+     */
     private LocalDateTime statrtTime;
 
+    /**
+     * 考试结束时间
+     */
     private LocalDateTime endTime;
 
+    /**
+     * 创建时间
+     */
     private LocalDateTime createTime;
 
 
