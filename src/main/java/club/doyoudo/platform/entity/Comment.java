@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-23
+ * @since 2021-04-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -25,9 +25,9 @@ public class Comment implements Serializable {
     private Long id;
 
     /**
-     * 帖子id，该评论仅可在该帖子下可见
+     * 当该评论是视频的评论时，belong_id就是视频id	当该评论时公告的评论时，belong_id就是公告id
      */
-    private Long postId;
+    private Long belongId;
 
     /**
      * 评论者id

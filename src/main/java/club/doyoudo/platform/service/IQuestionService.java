@@ -1,6 +1,7 @@
 package club.doyoudo.platform.service;
 
 import club.doyoudo.platform.entity.Question;
+import club.doyoudo.platform.vo.QuestionWithPointAndScore;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

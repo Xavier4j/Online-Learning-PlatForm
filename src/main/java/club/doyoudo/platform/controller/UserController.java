@@ -6,13 +6,14 @@ import club.doyoudo.platform.entity.User;
 import club.doyoudo.platform.service.IProfileService;
 import club.doyoudo.platform.service.IUserService;
 import club.doyoudo.platform.vo.ResponseWrapper;
+import club.doyoudo.platform.vo.UserWithProfile;
+import club.doyoudo.platform.vo.VideoWithPoint;
+import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -42,12 +43,16 @@ public class UserController {
         adminQueryWrapper.eq("username", user.getUsername());
         adminQueryWrapper.eq("password", user.getPassword());
         //根据账号密码查询用户
-        User user1 = userService.getOne(adminQueryWrapper);
-        if (user1 != null) {
-            if (user1.getRole() == 0) {
-                return new ResponseWrapper(true, 200, "登录成功,角色为学生！", null);
+        User selectedUser = userService.getOne(adminQueryWrapper);
+        if (selectedUser != null) {
+            //将密码置为空，防止泄露
+            selectedUser.setPassword(null);
+            UserWithProfile userWithProfile = JSONObject.parseObject(JSONObject.toJSONString(selectedUser), UserWithProfile.class);
+            userWithProfile.setProfile(profileService.selectProfile(selectedUser.getId()));
+            if (selectedUser.getRole() == 0) {
+                return new ResponseWrapper(true, 200, "登录成功,角色为学生！", userWithProfile);
             } else {
-                return new ResponseWrapper(true, 201, "登录成功,角色为老师！", null);
+                return new ResponseWrapper(true, 201, "登录成功,角色为老师！", userWithProfile);
             }
         } else {
             return new ResponseWrapper(false, 600, "登录失败，账号或者密码有误!", null);
@@ -70,14 +75,42 @@ public class UserController {
         //只能注册为学生
         user.setRole(0);
         if (userService.save(user)) {
+            //插入profile
             Profile profile = new Profile();
             profile.setUserId(user.getId());
             profile.setNickName("新人" + user.getUsername());
+            profile.setRole(0);
             profileService.insertProfile(profile);
-            return new ResponseWrapper(true, 200, "注册成功", user.getId());
+            //将user的密码置空
+            user.setPassword(null);
+            UserWithProfile userWithProfile = JSONObject.parseObject(JSONObject.toJSONString(user), UserWithProfile.class);
+            userWithProfile.setProfile(profile);
+            return new ResponseWrapper(true, 200, "注册成功", userWithProfile);
         } else {
             return new ResponseWrapper(false, 500, "系统异常，请稍后重试!", null);
         }
+    }
+
+    @ApiOperation(value = "修改密码", notes = "只需填写username、旧密码、新密码", produces = "application/json", httpMethod = "GET")
+    @RequestMapping("/update")
+    public ResponseWrapper update(Long userId, String oldPassword, String newPassword) {
+        //创建用户查询条件构造器
+        QueryWrapper<User> userQueryWrapper = new QueryWrapper<>();
+        userQueryWrapper.eq("id", userId);
+        userQueryWrapper.eq("password", oldPassword);
+        //根据账号密码查询用户
+        User selectedUser = userService.getOne(userQueryWrapper);
+        if (selectedUser == null) {
+            return new ResponseWrapper(true, 600, "旧密码输入不正确！", null);
+        } else {
+            User user = new User();
+            user.setId(userId);
+            user.setPassword(newPassword);
+            if (userService.updateById(user)) {
+                return new ResponseWrapper(true, 200, "修改成功！", null);
+            }
+        }
+        return new ResponseWrapper(false, 601, "修改失败，请稍后重试!", null);
     }
 }
 

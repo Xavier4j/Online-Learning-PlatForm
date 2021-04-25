@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-23
+ * @since 2021-04-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -35,9 +35,19 @@ public class Reply implements Serializable {
     private Long reviewerId;
 
     /**
+     * 接受者id(被回复者)
+     */
+    private Long recipientId;
+
+    /**
      * 回复内容
      */
     private String content;
+
+    /**
+     * 标记变量，0代表学生回复，1代表老师回复，老师回复默认置顶
+     */
+    private Integer flag;
 
     /**
      * 创建时间

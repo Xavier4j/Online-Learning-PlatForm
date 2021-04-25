@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-23
+ * @since 2021-04-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -37,7 +37,17 @@ public class Notice implements Serializable {
     /**
      * 发布人
      */
-    private Long author;
+    private Long authorId;
+
+    /**
+     * 通知封面
+     */
+    private String coverImageUrl;
+
+    /**
+     * 浏览数量
+     */
+    private String readNum;
 
     /**
      * 发布时间

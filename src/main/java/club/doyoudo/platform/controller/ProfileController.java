@@ -4,10 +4,10 @@ package club.doyoudo.platform.controller;
 import club.doyoudo.platform.entity.Profile;
 import club.doyoudo.platform.service.IProfileService;
 import club.doyoudo.platform.vo.ResponseWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -26,10 +26,18 @@ public class ProfileController {
     @Resource
     IProfileService profileService;
 
-    @ApiOperation(value = "修改个人信息", notes = "根据课程id修改课程信息", produces = "application/json", httpMethod = "GET")
+    @ApiOperation(value = "查询个人信息", notes = "根据用户id查询个人信息", produces = "application/json", httpMethod = "GET")
+    @RequestMapping("/select")
+    public ResponseWrapper select(Long userId) {
+        return new ResponseWrapper(true, 200, "查询成功!", profileService.selectProfile(userId));
+    }
+
+    @ApiOperation(value = "修改个人信息", notes = "根据课程id修改课程信息", produces = "application/json", httpMethod = "POST")
     @RequestMapping("/update")
-    public ResponseWrapper update(Profile profile) {
-        if (profileService.updateById(profile)) {
+    public ResponseWrapper update(@RequestBody Profile profile) {
+        UpdateWrapper<Profile> profileUpdateWrapper = new UpdateWrapper<>();
+        profileUpdateWrapper.eq("user_id",profile.getUserId());
+        if (profileService.update(profile, profileUpdateWrapper)) {
             return new ResponseWrapper(true, 200, "修改成功", null);
         }
         return new ResponseWrapper(false, 500, "系统异常，请稍后重试!", null);

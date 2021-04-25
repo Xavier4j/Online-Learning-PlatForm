@@ -12,5 +12,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2021-01-23
  */
 public interface IProfileService extends IService<Profile> {
+    Profile selectProfile(Long userId);
     boolean insertProfile(Profile profile);
 }

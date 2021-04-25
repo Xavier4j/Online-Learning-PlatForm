@@ -3,8 +3,11 @@ package club.doyoudo.platform.service.impl;
 import club.doyoudo.platform.entity.User;
 import club.doyoudo.platform.mapper.UserMapper;
 import club.doyoudo.platform.service.IUserService;
+import club.doyoudo.platform.vo.UserWithProfile;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * <p>
@@ -16,5 +19,4 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IUserService {
-
 }

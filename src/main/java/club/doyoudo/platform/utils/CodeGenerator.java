@@ -10,7 +10,6 @@ import com.baomidou.mybatisplus.generator.config.builder.ConfigBuilder;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.FileType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
 import com.baomidou.mybatisplus.generator.engine.VelocityTemplateEngine;
 
 import java.io.File;
@@ -99,7 +98,7 @@ public class CodeGenerator {
             public boolean isCreate(ConfigBuilder configBuilder, FileType fileType, String filePath) {
                 // 判断自定义文件夹是否需要创建
                 // checkDir("调用默认方法创建的目录，自定义目录用");
-                if (fileType == FileType.CONTROLLER) {
+                if (fileType == FileType.CONTROLLER || fileType == FileType.SERVICE || fileType == FileType.SERVICE_IMPL) {
                     // 已经生成 controller 文件判断存在，不想重新生成返回 false
                     return !new File(filePath).exists();
                 }
@@ -135,7 +134,7 @@ public class CodeGenerator {
         // 写于父类中的公共字段
         // strategy.setSuperEntityColumns("id");
         //user,profile,course,video,point,question,answer,paper,comment,reply,notice,message,question_point
-        strategy.setInclude(scanner("表名，多个英文逗号分割(user,profile,course,video,point,question,answer,paper,comment,reply,notice,message,question_point)").split(","));
+        strategy.setInclude(("user,profile,course,video,point,question,answer,paper,paper_question,comment,reply,notice,message,wrong_record").split(","));
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);

@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-23
+ * @since 2021-04-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -30,19 +30,34 @@ public class Question implements Serializable {
     private String question;
 
     /**
-     * 题目创建时间
-     */
-    private LocalDateTime createTime;
-
-    /**
-     * 题目类型：	0，单选题；	1，多选题；	2，判断题；	3，主观题；
+     * 题目类型：	0，单选题；	1，多选题；	2，判断题；	3，填空题；	4，问答题
      */
     private Integer type;
 
     /**
-     * 该字段仅当题目为判断题时有用，0：false;1:true;
+     * 选项，当题目为选择题时有效，选项标号从前往后，使用Json数组
      */
-    private Boolean isRight;
+    private String options;
+
+    /**
+     * 填空题空白处数量
+     */
+    private Integer blankNum;
+
+    /**
+     * 题目答案
+     */
+    private String rightAnswer;
+
+    /**
+     * 题目所涉及知识点
+     */
+    private Long pointId;
+
+    /**
+     * 题目创建时间
+     */
+    private LocalDateTime createTime;
 
 
 }

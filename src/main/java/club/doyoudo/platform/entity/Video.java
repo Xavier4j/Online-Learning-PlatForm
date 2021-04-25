@@ -10,7 +10,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-23
+ * @since 2021-04-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -36,7 +36,7 @@ public class Video implements Serializable {
     /**
      * 视频路径
      */
-    private String location;
+    private String url;
 
     /**
      * 视频的次序

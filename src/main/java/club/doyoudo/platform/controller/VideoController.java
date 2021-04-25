@@ -64,7 +64,7 @@ public class VideoController {
             //创建用户查询条件构造器
             QueryWrapper<Video> videoQueryWrapper = new QueryWrapper<>();
             videoQueryWrapper.eq("point_id", pointId);
-            String point = pointService.getById(pointId).getContent();
+            String point = pointService.getById(pointId).getPoint();
             List<Video> list = videoService.list(videoQueryWrapper);
             map.put(point, list);
         }

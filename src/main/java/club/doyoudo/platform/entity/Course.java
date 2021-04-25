@@ -11,7 +11,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author Xavier4j
- * @since 2021-01-23
+ * @since 2021-04-01
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -28,6 +28,21 @@ public class Course implements Serializable {
      * 课程名
      */
     private String name;
+
+    /**
+     * 课程老师
+     */
+    private Long teacherId;
+
+    /**
+     * 课程简介
+     */
+    private String description;
+
+    /**
+     * 课程封面
+     */
+    private String coverImageUrl;
 
     /**
      * 开始时间
